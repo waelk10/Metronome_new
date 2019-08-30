@@ -1,0 +1,55 @@
+﻿<!--
+  ~ Copyright (c) 2016.
+  ~ This file is part of Metronome.
+  ~
+  ~      Metronome is free software: you can redistribute it and/or modify
+  ~      it under the terms of the GNU General Public License as published by
+  ~      the Free Software Foundation, either version 3 of the License, or
+  ~      (at your option) any later version.
+  ~
+  ~      Metronome is distributed in the hope that it will be useful,
+  ~      but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~      GNU General Public License for more details.
+  ~
+  ~      You should have received a copy of the GNU General Public License
+  ~      along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+	<string name="app_name">Metronome</string>
+	<string name="start">スタート/ストップ</string>
+	<string name="beats_number">ビート:</string>
+	<string name="keep_on">画面をオンのままにする</string>
+	<string name="save">保存</string>
+	<string name="restore">復元</string>
+	<string name="about">アプリについて</string>
+	<string name="save_preset">プリセットを保存</string>
+	<string name="delete">削除</string>
+	<string name="deleted">削除しました</string>
+	<string name="no_saved_presets_toast">プリセットを保存していません!</string>
+	<string name="nothing_delete">削除対象がありません!</string>
+	<string name="values_set">正しい値をセットしてください!</string>
+	<string name="save_name">保存:</string>
+	<string name="tap">タップ</string>
+	<string name="stop_tap">タップ終了</string>
+	<string name="round_up">アップ</string>
+	<string name="round_down">ダウン</string>
+	<string name="round_up_toast">BPM 値を切り上げて丸めます。</string>
+	<string name="round_down_toast">BPM 値を切り捨てて丸めます。</string>
+	<string name="tone">トーン</string>
+	<string name="tick">チック</string>
+	<string name="tock">タック</string>
+	<string name="about_note">タップは 4/4 に分かれることに注意してください!</string>
+	<string name="reset">デフォルトにリセット</string>
+	<string name="action_settings">設定</string>
+	<string name="ok">OK</string>
+	<string name="wave_type">波のタイプ：</string>
+	<string name="square">平方</string>
+	<string name="sine">正弦</string>
+	<string name="sawtooth">のこぎり</string>
+	<string name="save_success_toast">正常に保存！</string>
+	<string name="save_fail_toast">保存しませんでした！</string>
+	<string name="restore_read_fail_toast">読み取りに失敗し、アプリのデータを消去するか、もう一度保存してみてください！</string>
+	<string name="cancel">キャンセル</string>
+</resources>
