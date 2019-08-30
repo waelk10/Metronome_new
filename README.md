@@ -6,7 +6,7 @@
 You may need to manually modify the "build.gradle-sample" file before compiling the project!
 
 ## License
-The project is licensed under the [GNU General Public License version 3 (or newer)](https://github.com/waelk10/Metronome/blob/master/LICENSE)
+The project is licensed under the [GNU General Public License version 3 (or newer)](https://notabug.org/wael/Metronome/src/master/LICENSE)
 
 ## IMPORTANT NOTICE(S):
 1- I WILL NOT BE IMPLEMENTING ANY CoCs.
