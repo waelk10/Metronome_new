@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Metronome</string>
+	<string name="about">אודות</string>
+	<string name="about_note">לתשומת ליבכם, הפעימות הינן בחלוקה של 4/4</string>
+	<string name="action_settings">הגדרות</string>
+	<string name="beats_number">פעימות:</string>
+	<string name="cancel">ביטול</string>
+	<string name="delete">מחק</string>
+	<string name="deleted">נמחק</string>
+	<string name="keep_on">השאר מסך דלוק</string>
+	<string name="no_saved_presets_toast">אין הגדרות שמורות</string>
+	<string name="nothing_delete">אין הגדות למחוק</string>
+	<string name="ok">אישור</string>
+	<string name="reset">אתחל להגדרות התחלתיות</string>
+	<string name="restore">שחזר</string>
+	<string name="restore_read_fail_toast">לא הצליחה הקריאה, אנא מחקו את מידע האפליקציה ונסו שוב</string>
+	<string name="round_down">למטה</string>
+	<string name="round_down_toast">עיגול למטלה לערך BPM</string>
+	<string name="round_up">למעלה</string>
+	<string name="round_up_toast">עיגול למעלה לערך BPM</string>
+	<string name="save">שמור</string>
+	<string name="save_fail_toast">לא נשמר!</string>
+	<string name="save_name">שמור:</string>
+	<string name="save_preset">שמור הגדרות</string>
+	<string name="save_success_toast">נשמר בהצלחה!</string>
+	<string name="sawtooth">שן מסור</string>
+	<string name="sine">סינוס</string>
+	<string name="square">מרובע</string>
+	<string name="start">התחלה/הפסק</string>
+	<string name="stop_tap">"הפסקת פעימות "</string>
+	<string name="tap">פעימה</string>
+	<string name="tick">טיק</string>
+	<string name="tock">טוק</string>
+	<string name="tone">צליל</string>
+	<string name="values_set">בחר ערכים הגיוניים</string>
+	<string name="wave_type">סוג גל</string>
+	<string name="website">אתר המתכנת:</string>
+</resources>

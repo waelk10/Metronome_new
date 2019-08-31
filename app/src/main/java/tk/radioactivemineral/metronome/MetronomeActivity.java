@@ -861,7 +861,7 @@ public class MetronomeActivity extends Activity {
 		Spanny message = new Spanny(getString(R.string.app_name) + '\n', new UnderlineSpan()).append('\n' + getString(R.string.email)).append('\n' + getString(R.string.copyright)).append('\n' + version + '\n').append('\n' + getString(R.string.about_note)).append("\n\n" + getString(R.string.license)).append("\n\n" + this.getResources().getText(R.string.radioactive));
 		builder.setTitle(getString(R.string.about));
 		//add the icon
-		builder.setIcon(getResources().getDrawable(R.mipmap.ic_launcher, getTheme()));
+		builder.setIcon(getResources().getDrawable(R.drawable.ic_launcher, getTheme()));
 		//set text
 		textView.setText(message.toString());
 		//create the object

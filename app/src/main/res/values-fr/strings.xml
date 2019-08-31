@@ -52,4 +52,5 @@
 	<string name="save_fail_toast">N\'a pas économisé!</string>
 	<string name="restore_read_fail_toast">Impossible de lire, d\'effacer les données de l\'application ou d\'essayer de sauvegarder à nouveau!</string>
 	<string name="cancel">Annuler</string>
+	<string name="website">"Site Web du développeur: "</string>
 </resources>

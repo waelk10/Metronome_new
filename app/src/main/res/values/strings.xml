@@ -38,6 +38,7 @@
 	<string name="PWM" translatable="false">PWM</string>
 	<string name="cancel">Cancel</string>
 	<string name="radioactive" translatable="false">https://radioactive.waelk.tech</string>
+	<string name="website">Developer website: </string>
 	<string name="about">About</string>
 	<string name="about_note">Note that the taps are in subdivisions of 4/4!</string>
 	<string name="beats_number">Beats:</string>

@@ -52,4 +52,5 @@
 	<string name="save_fail_toast">保存しませんでした！</string>
 	<string name="restore_read_fail_toast">読み取りに失敗し、アプリのデータを消去するか、もう一度保存してみてください！</string>
 	<string name="cancel">キャンセル</string>
+	<string name="website">"開発者ウェブサイト： "</string>
 </resources>
