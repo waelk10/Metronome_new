@@ -247,6 +247,9 @@ public class MetronomeActivity extends Activity {
 	private View.OnClickListener roundUpListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
+			//stop and reset the metronome on change of values
+			metronomeStop();
+			//button logic
 			if (bpm % 10 != 0)
 				if (((bpm / 10 + 1) * 10) != bpm) {
 					bpm = bpm / 10 + 1;
@@ -259,6 +262,9 @@ public class MetronomeActivity extends Activity {
 	private View.OnClickListener roundDownListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
+			//stop and reset the metronome on change of values
+			metronomeStop();
+			//button logic
 			if (bpm % 10 != 0)
 				if ((bpm - 10) >= 0) {
 					bpm = bpm / 10;

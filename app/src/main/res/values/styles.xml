@@ -26,6 +26,7 @@
 		<item name="android:textColorPrimary">@color/colorPrimaryText</item>
 		<item name="android:textColorSecondary">@color/colorSecondaryText</item>
 		<item name="android:itemBackground">@color/colorPrimaryDark</item>
+		<item name="android:navigationBarColor">@color/colorPrimaryDark</item>
 	</style>
 
 	<!-- Save Dialog theme -->
@@ -36,6 +37,7 @@
 		<item name="android:textColorPrimary">@color/colorPrimaryText</item>
 		<item name="android:textColorSecondary">@color/colorSecondaryText</item>
 		<item name="android:windowBackground">@color/colorPrimaryDark</item>
+		<item name="android:navigationBarColor">@color/colorPrimaryDark</item>
 	</style>
 
 	<!-- Divider line View style -->
