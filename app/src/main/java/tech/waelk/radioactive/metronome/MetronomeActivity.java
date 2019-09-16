@@ -16,7 +16,7 @@
  *      along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package tk.radioactivemineral.metronome;
+package tech.waelk.radioactive.metronome;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -53,7 +53,7 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.UUID;
 
-import static tk.radioactivemineral.metronome.SaveDialogActivity.DATA_STORAGE_FILE_NAME;
+import static tech.waelk.radioactive.metronome.SaveDialogActivity.DATA_STORAGE_FILE_NAME;
 
 /**
  * Useful links

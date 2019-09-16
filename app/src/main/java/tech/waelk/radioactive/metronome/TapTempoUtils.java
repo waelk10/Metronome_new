@@ -16,7 +16,7 @@
  *      along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package tk.radioactivemineral.metronome;
+package tech.waelk.radioactive.metronome;
 
 /**
  * Utilities for easing the handling and calculation(s) required for implementing the "Tap Tempo" feature.

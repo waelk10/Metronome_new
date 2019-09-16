@@ -16,7 +16,7 @@
  *      along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package tk.radioactivemineral.metronome;
+package tech.waelk.radioactive.metronome;
 
 import android.content.Context;
 import android.util.Log;
