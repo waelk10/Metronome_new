@@ -1,19 +1,20 @@
 /*
- * Copyright (c) 2019.
- * This file is part of Metronome.
+ * Copyright (c) 2020.
+ *  This file is part of Metronome.
  *
- *      Metronome is free software: you can redistribute it and/or modify
- *      it under the terms of the GNU General Public License as published by
- *      the Free Software Foundation, either version 3 of the License, or
- *      (at your option) any later version.
+ * Metronome is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- *      Metronome is distributed in the hope that it will be useful,
- *      but WITHOUT ANY WARRANTY; without even the implied warranty of
- *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *      GNU General Public License for more details.
+ * Metronome is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- *      You should have received a copy of the GNU General Public License
- *      along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
+ * You should have received a copy of the GNU General Public License
+ * along with Metronome.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
 
 package tech.waelk.radioactive.metronome;
@@ -862,7 +863,7 @@ public class MetronomeActivity extends Activity {
 		LayoutInflater layoutInflater = this.getLayoutInflater();
 		View dialogView = layoutInflater.inflate(R.layout.linear_layout_about_container,null);
 		builder.setView(dialogView);
-		TextView textView = (TextView) dialogView.findViewById(R.id.textViewAbout);
+		TextView textView = dialogView.findViewById(R.id.textViewAbout);
 		//build the text
 		Spanny message = new Spanny(getString(R.string.app_name) + '\n', new UnderlineSpan()).append('\n' + getString(R.string.email)).append('\n' + getString(R.string.copyright)).append('\n' + version + '\n').append('\n' + getString(R.string.about_note)).append("\n\n" + getString(R.string.license)).append("\n\n" + this.getResources().getText(R.string.radioactive));
 		builder.setTitle(getString(R.string.about));
