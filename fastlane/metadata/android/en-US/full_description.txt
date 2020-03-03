@@ -1,0 +1,6 @@
+A simple and modern Metronome Application for Android.
+This application provides you with all you'd expect from a metronome without added complexity.
+The features are intentionally kept simple and usable:
+1) The metronome itself.
+2) Tap Tempo (to input those trickier tempos).
+3) Saving and restoring presets (so you can switch between musical pieces easily).
