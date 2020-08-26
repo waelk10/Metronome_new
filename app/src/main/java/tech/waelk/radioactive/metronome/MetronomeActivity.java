@@ -76,6 +76,7 @@ public class MetronomeActivity extends Activity {
 	public final static String DIALOG_SAVE_BEAT_SOUND = "INTENT_BEAT_SOUND_DATA";
 	public final static String DIALOG_SAVE_SOUND = "INTENT_SOUND_DATA";
 	public final static String DIALOG_SAVE_WAVE = "INTENT_WAVE_DATA";
+	private final static String NEWLINE = "\n";
 	private final static int BPM_INDEX = 0;
 	private final static int BEATS_INDEX = 1;
 	private final static int BEAT_SOUND_INDEX = 2;
@@ -87,6 +88,7 @@ public class MetronomeActivity extends Activity {
 	private final static double SOUND = 880;
 	private final static double BEAT_SOUND = 440;
 	private final static double THINNESS = 0.2;
+	private final static double DIALOG_TO_SCREEN_RATIO = 0.95;
 	private final static boolean AUTO_SAVE_FLAG_TRUE = true;
 	private final static String TAG = "MetronomeActivity";
 
@@ -599,11 +601,10 @@ public class MetronomeActivity extends Activity {
 	//overflow menu logic
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-			case R.id.action_about:
-				metronomeStop();
-				aboutDialog();
-				return true;
+		if (item.getItemId() == R.id.action_about) {
+			metronomeStop();
+			aboutDialog();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -682,8 +683,8 @@ public class MetronomeActivity extends Activity {
 		final String[] notes = pitchGenerator.getNotes();
 		AlertDialog.Builder builder = new AlertDialog.Builder(contextActivity, R.style.DialogSaveTheme);
 		//change size
-		int width = (int)(contextActivity.getResources().getDisplayMetrics().widthPixels*0.9);
-		int height = (int)(contextActivity.getResources().getDisplayMetrics().heightPixels*0.9);
+		int width = (int)(contextActivity.getResources().getDisplayMetrics().widthPixels*DIALOG_TO_SCREEN_RATIO);
+		int height = (int)(contextActivity.getResources().getDisplayMetrics().heightPixels*DIALOG_TO_SCREEN_RATIO);
 		builder.setSingleChoiceItems(notes, 0, null).setPositiveButton(R.string.tock, new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
@@ -720,7 +721,12 @@ public class MetronomeActivity extends Activity {
 		});
 		AlertDialog dialog = builder.create();
 		dialog.show();
+		try{
 		dialog.getWindow().setLayout(width, height);
+		}catch (NullPointerException npe){
+			Log.e(TAG, "Error in creating alert-dialog for the pitches.");
+			Log.e(TAG, npe.toString());
+		}
 	}
 
 	//restore dialog
@@ -865,7 +871,15 @@ public class MetronomeActivity extends Activity {
 		builder.setView(dialogView);
 		TextView textView = dialogView.findViewById(R.id.textViewAbout);
 		//build the text
-		Spanny message = new Spanny(getString(R.string.app_name) + '\n', new UnderlineSpan()).append('\n' + getString(R.string.email)).append('\n' + getString(R.string.copyright)).append('\n' + version + '\n').append('\n' + getString(R.string.about_note)).append("\n\n" + getString(R.string.license)).append("\n\n" + this.getResources().getText(R.string.radioactive));
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(getString(R.string.app_name)).append(NEWLINE);
+		stringBuilder.append(getString(R.string.email)).append(NEWLINE);
+		stringBuilder.append(getString(R.string.copyright)).append(NEWLINE);
+		stringBuilder.append(version).append(NEWLINE).append(NEWLINE);
+		stringBuilder.append(getString(R.string.about_note)).append(NEWLINE).append(NEWLINE);
+		stringBuilder.append(getString(R.string.license)).append(NEWLINE).append(NEWLINE);
+		stringBuilder.append(getString(R.string.radioactive));
+		Spanny message = new Spanny(stringBuilder.toString());
 		builder.setTitle(getString(R.string.about));
 		//add the icon
 		builder.setIcon(getResources().getDrawable(R.drawable.ic_launcher, getTheme()));
@@ -877,9 +891,14 @@ public class MetronomeActivity extends Activity {
 		dialog.show();
 
 		//change size
-		int width = (int)(contextActivity.getResources().getDisplayMetrics().widthPixels*0.9);
-		int height = (int)(contextActivity.getResources().getDisplayMetrics().heightPixels*0.9);
-		dialog.getWindow().setLayout(width, height);
+		int width = (int)(contextActivity.getResources().getDisplayMetrics().widthPixels*DIALOG_TO_SCREEN_RATIO);
+		int height = (int)(contextActivity.getResources().getDisplayMetrics().heightPixels*DIALOG_TO_SCREEN_RATIO);
+		try {
+			dialog.getWindow().setLayout(width, height);
+		}catch (NullPointerException npe){
+			Log.e(TAG, "Error in creating alert-dialog for the \"about\" menu.");
+			Log.e(TAG, npe.toString());
+		}
 	}
 
 	//used to find and return the values of the auto-save preset
@@ -903,7 +922,7 @@ public class MetronomeActivity extends Activity {
 	private String getUuid(String data) {
 		if (data == null)
 			return null;
-		String dataString = null;
+		String dataString;
 		dataString = MiscUtils.getAutoSave(data, MetronomeActivity.this);
 		if (dataString == null)
 			return null;
@@ -932,7 +951,7 @@ public class MetronomeActivity extends Activity {
 
 	//helper function used to reset the metronome and related variables
 	private void metronomeReset() {
-		//stop the metronome
+		//stop the metronome and reset it
 		currentMetronome.setBeatSound(0.0);
 		currentMetronome.setBeat(0);
 		currentMetronome.setSound(0.0);

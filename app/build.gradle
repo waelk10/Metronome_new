@@ -20,13 +20,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "tech.waelk.radioactive.metronome"
         minSdkVersion 22
-        targetSdkVersion 28
-        versionCode 10
-        versionName 'Polonium'
+        targetSdkVersion 29
+        versionCode 11
+        versionName 'Americium'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -35,16 +35,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-	buildToolsVersion = '29.0.3'
+	buildToolsVersion = '30.0.2'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.google.android.material:material:1.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.android.material:material:1.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 	implementation 'com.binaryfork:spanny:1.0.4'
-	implementation 'com.fabiendevos:nanotasks:1.1.0'
+    implementation 'com.fabiendevos:nanotasks:1.1.0'
 }
