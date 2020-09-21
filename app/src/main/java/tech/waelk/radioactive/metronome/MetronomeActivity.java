@@ -66,6 +66,7 @@ import static tech.waelk.radioactive.metronome.SaveDialogActivity.DATA_STORAGE_F
 //TODO: EXTREMELY IMPORTANT: WHENEVER YOU PUSH A NEW VERSION TO GITHUB, MAKE SURE TO MANUALLY UPDATE THE CHANGES OF "build.gradle" TO "build.gradle-sample", WHILE EXCLUDING THE SIGNING CONFIG!!!!!!
 
 public class MetronomeActivity extends Activity {
+	// Constants.
 	public final static boolean AUTO_SAVE_FLAG_FALSE = false;
 	public final static int REQUEST_ID = 1;
 	public final static String PREFS_NAME = "DbPrefsFile";
