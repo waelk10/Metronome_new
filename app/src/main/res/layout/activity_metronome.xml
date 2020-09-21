@@ -67,7 +67,9 @@
 		android:layout_below="@id/textView"
 		android:layout_alignParentStart="true"
 		android:layout_toEndOf="@id/textView"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp">
 
 		<Button
 			android:id="@+id/buttonPlusOne"
@@ -148,7 +150,9 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@id/textView2"
 		android:layout_alignParentStart="true"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp">
 
 		<Button
 			android:id="@+id/buttonBeatPlusOne"
@@ -179,7 +183,9 @@
 		android:paddingRight="20dp"
 		android:text="@string/keep_on"
 		android:textOff="@string/keep_on"
-		android:textOn="@string/keep_on" />
+		android:textOn="@string/keep_on"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"/>
 
 
 	<LinearLayout
@@ -189,7 +195,9 @@
 		android:layout_below="@id/radiogroup"
 		android:layout_marginTop="10dp"
 		android:orientation="horizontal"
-		android:weightSum="2">
+		android:weightSum="2"
+		android:paddingTop="10dp"
+		android:paddingBottom="2dp">
 
 		<Button
 			android:id="@+id/buttonTap"
@@ -260,7 +268,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_below="@id/toggleButton"
-		android:layout_marginTop="10dp"
+		android:layout_marginTop="20dp"
 		android:orientation="horizontal">
 
 		<TextView
