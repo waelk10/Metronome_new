@@ -110,7 +110,6 @@ public class AudioGenerator {
 		return sample;
 	}
 
-
 	//helper function that returns 1 for positive and -1 for negative
 	private double getSign(double value){
 		if (value >= 0)
