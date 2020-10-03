@@ -39,12 +39,12 @@
 	<color name="colorPrimaryDarker">#1F92EB</color>-->
 
 	<color name="colorPrimary">#00CECB</color>
-	<color name="colorPrimaryDark">#466060</color>
+	<color name="colorPrimaryDark">#293838</color>
 	<color name="colorPrimaryLight">#38d9d6</color>
 	<color name="colorAccent">#FFFFEA</color>
 	<color name="colorPrimaryText">#FFFFEA</color>
 	<color name="colorSecondaryText">#D8D8D8</color>
 	<color name="icons">#FFFFEA</color>
 	<color name="divider">#38d9d6</color>
-	<color name="colorPrimaryDarker">#577288</color>
+	<color name="colorPrimaryDarker">#2f3e4a</color>
 </resources>
